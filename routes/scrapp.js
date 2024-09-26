@@ -4,7 +4,7 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 
 /* GET home page. */
-router.get("/scrapp", async function (req, res) {
+router.get("/countries", async function (req, res) {
   try {
     const response = await axios.get(
       "https://www.scrapethissite.com/pages/simple/"

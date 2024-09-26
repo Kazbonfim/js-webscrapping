@@ -12,15 +12,22 @@ a {
 }
 
 .header {
+  padding: 2rem;
   border: 1px solid grey;
-  border-left: 1rem solid grey;
+  border-left: 0.5rem solid grey;
   width: 50rem;
   position: absolute;
-  margin-top: 10em;
   background-color: rgba(0, 125, 198, 0.5);
 }
 
-.header h1,
-p{
+.header h1, p{
   margin-left: 0.5em;
+}
+
+.header > h1 {
+  border-bottom: 1px solid black;
+}
+
+.countries-lista, li{
+  margin-bottom: 1em;
 }
