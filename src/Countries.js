@@ -9,7 +9,7 @@ const Countries = () => {
     useEffect(() => {
         const fetchCountries = async () => {
             try {
-                const response = await axios.get('/countries'); // Rota que retorna os dados
+                const response = await axios.get('/scrapp-countries'); // Rota que retorna os dados do back-end
                 setPaises(response.data.listagem);
             } catch (err) {
                 setError('Erro ao carregar os países');
