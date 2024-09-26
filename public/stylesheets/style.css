@@ -1,0 +1,26 @@
+* {
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+a {
+  color: #0a2d3b;
+}
+
+.header {
+  border: 1px solid grey;
+  border-left: 1rem solid grey;
+  width: 50rem;
+  position: absolute;
+  margin-top: 10em;
+  background-color: rgba(0, 125, 198, 0.5);
+}
+
+.header h1,
+p{
+  margin-left: 0.5em;
+}
