@@ -4,7 +4,7 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 const path = require('path');
 
-/* GET home page. */
+// Função do pseudo back-end de buscar os dados HTML do link, retornar, e organizar eles antes de virarem JSON
 router.get("/scrapp-countries", async function (req, res) {
 
   try {
@@ -39,6 +39,8 @@ router.get("/scrapp-countries", async function (req, res) {
   }
 });
 
+// Aqui, ao acessar esse end-point, ele vai recuperar os dados do JSON acima, e aplicar no React 👌
+// Sim, servir arquivos estáticos assim pode não ser tão legal, mas é pra ser SIMPLES.
 router.get('/countries', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/countries.html'));
 });
